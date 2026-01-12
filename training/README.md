@@ -75,9 +75,9 @@ See `nvidia-smi` output for your system GPU IDs. `n_gpus_per_node` should be set
 
 You can change all configuration options by either modifying the config YAML (in this case, `configs/inter_generalisation/algorithmic_qwen_3b.yaml`) or providing them as args to the Python script.
 
-As an alternative, you can use the provided slurm script under:
+As an alternative, you can use the provided slurm script under training/train_script.sh as:
 ```
-training/train_script.sh
+sbatch training/train_script.sh
 ```
 
 Please update the slurm flags for your specific configuration.
@@ -120,9 +120,9 @@ For example:
 python evaluate_model.py --config eval_algorithmic_composite.yaml
 ```
 
-As an alternative, you can use the provided slurm script under:
+As an alternative, you can use the provided slurm script under training/evaluations/eval_script.sh as:
 ```
-training/evaluations/eval_script.sh
+sbatch training/evaluations/eval_script.sh
 ```
 
 Please update the slurm flags for your specific configuration.

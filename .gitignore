@@ -50,3 +50,9 @@ htmlcov/
 wandb/
 outputs/
 *.log
+
+training/algorithmic_qwen_3/
+training/algorithmic_qwen_3_step_100/
+training/algorithmic_qwen_3_step_400/
+training/checkpoints/
+training/evaluations/results/

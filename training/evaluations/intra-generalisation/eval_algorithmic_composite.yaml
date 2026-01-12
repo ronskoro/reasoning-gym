@@ -1,10 +1,12 @@
 # Model configuration
-model_path: ../utils/qwen3b_algorithmic_500
+model_path: /mnt/lustre/home/bethge/bkr261/projects/reasoning-gym/training/algorithmic_qwen_3_step_100
 max_tokens: 1024
 temperature: 0.6
 top_p: 0.9
+dtype: auto
 developer_prompt: DeepSeekZero
 developer_role: system  # Standard role for system prompts
+
 
 # Output configuration
 output_dir: results

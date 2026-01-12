@@ -11,7 +11,7 @@ from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 def main(fsdp_checkpoint_path, huggingface_model_path, output_path):
     state_dict = defaultdict(list)
 
-    world_size = 4
+    world_size = 2
     for rank in range(world_size):
         filepath = f"{fsdp_checkpoint_path}/model_world_size_{world_size}_rank_{rank}.pt"
         print("loading", filepath)
